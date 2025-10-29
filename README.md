@@ -60,7 +60,6 @@ npm run start
 Or export as a static site:
 
 bash
-Copy code
 npm run export
 🔧 Customisation
 Update your name, bio, social links in pages/index.jsx (or wherever you placed them).
@@ -92,17 +91,6 @@ This repository is released under the MIT License. See the LICENSE file for more
 Thank you for visiting!
 Ready to build, iterate, and make this portfolio reflect the next level of your work.
 — Himanshu007
-
----
-
-### ✅ What’s Next  
-1. Copy the above into a `README.md` file at the root of your GitHub repo.  
-2. Update any placeholders (your name, bio, link, project list) to match your story.  
-3. Commit & push the changes → This will reflect on your GitHub page and give a professional look.
-
-If you like, I can generate an even more detailed README (badges, live demo link, CI/CD section, analytics) for you — do you want that?
-::contentReference[oaicite:0]{index=0}
-
 
 
 
