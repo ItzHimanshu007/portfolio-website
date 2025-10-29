@@ -1,0 +1,226 @@
+{
+  "meta": {
+    "title": "Himanshu Jasoriya | AI/ML Engineer",
+    "description": "Portfolio website showcasing AI/ML projects, full-stack development work, and innovation in tech"
+  },
+  "personal": {
+    "name": "Himanshu Jasoriya",
+    "title": "AI/ML Engineer || Tech & Business Innovator",
+    "location": "Jaipur, Rajasthan, India",
+    "avatar": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/profile%20photo-xokbrzKFq9K1w62QwGNzBVJ9YYAsoC.png",
+    "email": "hjasoriya007@gmail.com",
+    "phone": "+91 6375884386",
+    "workingHours": "Monday - Friday, 10am - 6pm IST",
+    "availableForWork": true,
+    "badges": ["AI/ML", "Full-Stack Development", "Business Innovation"],
+    "social": [
+      {
+        "platform": "GitHub",
+        "url": "https://github.com/ItzHimanshu007",
+        "icon": "Github"
+      },
+      {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/in/himanshu-jasoriya-23b77331a",
+        "icon": "Linkedin"
+      },
+      {
+        "platform": "Twitter",
+        "url": "https://x.com/itzhimanshu_07",
+        "icon": "Twitter"
+      }
+    ]
+  },
+  "about": {
+    "bio": "I create AI-driven digital experiences that bridge technology and human empathy. Passionate about ethical innovation and real-world impact, I design intelligent solutions that improve lives. Currently pursuing B.Tech in AI & Data Science, I'm focused on building tech that inspires change.",
+    "focus": [
+      "Building AI-driven and user-centered digital solutions that blend innovation with real-world impact",
+      "Bridging the gap between technology, business, and design to create products that truly matter",
+      "Exploring ethical AI, accessibility, and human-computer interaction to shape the future of intelligent systems"
+    ],
+    "languages": [
+      {
+        "name": "Hindi",
+        "proficiency": "Native",
+        "level": 100,
+        "flag": "🇮🇳"
+      },
+      {
+        "name": "English",
+        "proficiency": "Fluent",
+        "level": 90,
+        "flag": "🇬🇧"
+      },
+      {
+        "name": "Spanish",
+        "proficiency": "Basic",
+        "level": 40,
+        "flag": "🇪🇸"
+      }
+    ],
+    "interests": ["Artificial Intelligence", "Machine Learning", "VR/AR", "Ethical AI", "Startup Innovation"]
+  },
+  "navigation": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "Experience",
+      "href": "#experience"
+    },
+    {
+      "label": "Credentials",
+      "href": "#credentials"
+    },
+    {
+      "label": "Skills",
+      "href": "#skills"
+    },
+    {
+      "label": "Projects",
+      "href": "#projects"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Founder",
+      "company": "Neuronest (AI + VR Therapy Startup)",
+      "period": "2024 - Present",
+      "description": "Leading the development of an AI + VR mental health therapy platform for schizophrenia, PTSD, and phobias. Integrating emotion-aware AI avatars and biometric feedback systems (EEG, GSR, heart rate) for immersive treatment experiences. Managing a multidisciplinary team of developers, AI researchers, and content designers to prototype MVPs and pitch at hackathons.",
+      "achievements": [
+        "Selected among top teams in HackGrounds India 2K25 hackathon",
+        "Developed early prototype simulations using Unity3D + AI pipeline integration",
+        "Recognized for innovative pitch at E-Cell ACEIT Eureka 2025 competition"
+      ],
+      "technologies": ["Python", "TensorFlow", "OpenCV", "Unity3D", "VR Prototyping", "Business Strategy", "Leadership"]
+    },
+    {
+      "title": "Machine Learning Intern",
+      "company": "Cognifyz Technologies",
+      "period": "2025 - Present",
+      "description": "Working on real-world machine learning and data analytics projects, contributing to predictive modeling and automation tasks. Collaborating with the engineering team to clean and preprocess datasets, apply feature engineering, and test ML algorithms for accuracy and efficiency. Designing end-to-end ML pipelines using Scikit-learn and Pandas.",
+      "achievements": [
+        "Built a classification model that achieved 90%+ accuracy in loan approval prediction",
+        "Improved model training speed by 35% through optimized preprocessing workflows",
+        "Delivered technical presentations to cross-functional teams, explaining ML outputs in business terms"
+      ],
+      "technologies": [
+        "Python",
+        "Scikit-learn",
+        "Pandas",
+        "NumPy",
+        "Matplotlib",
+        "Data Preprocessing",
+        "Model Evaluation"
+      ]
+    }
+  ],
+  "credentials": {
+    "certifications": [
+      {
+        "name": "Machine Learning Internship",
+        "issuer": "Cognifyz Technologies",
+        "date": "2025",
+        "logo": "/generic-military-logo.png"
+      },
+      {
+        "name": "Python for Data Science",
+        "issuer": "IBM SkillsBuild / Coursera",
+        "date": "2024",
+        "logo": "/generic-military-logo.png"
+      },
+      {
+        "name": "Introduction to Deep Learning",
+        "issuer": "Coursera (Andrew Ng / DeepLearning.AI)",
+        "date": "2024",
+        "logo": "/generic-military-logo.png"
+      },
+      {
+        "name": "Data Visualization with Power BI",
+        "issuer": "Microsoft Learn",
+        "date": "2024",
+        "logo": "/generic-military-logo.png"
+      },
+      {
+        "name": "Artificial Intelligence Fundamentals",
+        "issuer": "Google AI / Kaggle Learn",
+        "date": "2024",
+        "logo": "/generic-military-logo.png"
+      },
+      {
+        "name": "Generative AI & Prompt Engineering",
+        "issuer": "OpenAI Community Certification",
+        "date": "2024",
+        "logo": "/generic-military-logo.png"
+      },
+      {
+        "name": "Git & GitHub for Developers",
+        "issuer": "Udemy / GitHub Training Labs",
+        "date": "2024",
+        "logo": "/generic-military-logo.png"
+      }
+    ],
+    "education": [
+      {
+        "degree": "Bachelor of Technology in Artificial Intelligence & Data Science",
+        "institution": "Arya College of Engineering & IT, Jaipur",
+        "year": "2024 - Present",
+        "logo": "/generic-art-school-logo.png"
+      },
+      {
+        "degree": "Senior Secondary (Class 12, CBSE Board)",
+        "institution": "Vadanta International School, Jaipur",
+        "year": "2024",
+        "logo": "/generic-art-school-logo.png"
+      },
+      {
+        "degree": "Secondary (Class 10, CBSE Board)",
+        "institution": "Vadanta International School, Jaipur",
+        "year": "2022",
+        "logo": "/generic-art-school-logo.png"
+      }
+    ],
+    "skills": [
+      "Machine Learning",
+      "Deep Learning",
+      "Data Science",
+      "Full-Stack Development",
+      "AI/ML Pipeline Design",
+      "Data Preprocessing",
+      "Model Evaluation",
+      "Business Innovation"
+    ]
+  },
+  "technicalSkills": {
+    "design": ["Figma", "Canva", "UI/UX Wireframing", "Prototyping", "Layout Design"],
+    "development": [
+      "HTML/CSS",
+      "JavaScript",
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Tailwind CSS",
+      "Git & GitHub",
+      "RESTful APIs",
+      "Responsive Web Design"
+    ],
+    "aiAndMl": [
+      "AI & Data Science",
+      "Python",
+      "NumPy / Pandas",
+      "Scikit-learn",
+      "TensorFlow (Basics)",
+      "Data Visualization (Matplotlib / Seaborn)"
+    ],
+    "uxMethods": ["Python", "NumPy / Pandas", "Scikit-learn", "TensorFlow", "Data Visualization", "Machine Learning"],
+    "softSkills": [
+      "Team Collaboration",
+      "Problem Solving",
+      "Communication & Presentation",
+      "Time Management",
+      "Leadership & Creativity"
+    ]
+  }
+}
