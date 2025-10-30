@@ -1,46 +1,50 @@
-import portfolioData from "@/data/portfolio-data.json"
+import { getPortfolioData } from "@/lib/storage"
 import { projects, getAllProjects, getProjectBySlug, getRelatedProjects } from "@/lib/projects"
 
-// Export the portfolio data
-export const data = portfolioData
+// Export the portfolio data (now dynamic)
+export function getData() {
+  return getPortfolioData()
+}
+
+export const data = getPortfolioData()
 
 // Export the projects data
 export { projects, getAllProjects, getProjectBySlug, getRelatedProjects }
 
 // Type definitions for the portfolio data
-export type PortfolioData = typeof portfolioData
+export type PortfolioData = typeof data
 
 // Helper function to get navigation items
 export function getNavItems() {
-  return data.navigation
+  return getData().navigation
 }
 
 // Helper function to get personal information
 export function getPersonalInfo() {
-  return data.personal
+  return getData().personal
 }
 
 // Helper function to get about information
 export function getAboutInfo() {
-  return data.about
+  return getData().about
 }
 
 // Helper function to get experience information
 export function getExperienceInfo() {
-  return data.experience
+  return getData().experience
 }
 
 // Helper function to get credentials information
 export function getCredentialsInfo() {
-  return data.credentials
+  return getData().credentials
 }
 
 // Helper function to get technical skills information
 export function getTechnicalSkillsInfo() {
-  return data.technicalSkills
+  return getData().technicalSkills
 }
 
 // Helper function to get meta information
 export function getMetaInfo() {
-  return data.meta
+  return getData().meta
 }

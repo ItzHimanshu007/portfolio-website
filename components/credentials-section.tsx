@@ -1,12 +1,29 @@
+"use client"
+
+import { useState, useEffect } from "react"
 import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import { GraduationCap, Award } from "lucide-react"
 import { SkillTag } from "@/components/skill-tag"
 import { AnimatedSection } from "@/components/animated-section"
-import { getCredentialsInfo } from "@/lib/data"
+import { getPortfolioData, initializeStorage } from "@/lib/storage"
 
 export function CredentialsSection() {
-  const credentialsInfo = getCredentialsInfo()
+  const [credentialsInfo, setCredentialsInfo] = useState(getPortfolioData().credentials)
+
+  useEffect(() => {
+    initializeStorage()
+    const data = getPortfolioData()
+    setCredentialsInfo(data.credentials)
+
+    const handleStorageChange = () => {
+      const updatedData = getPortfolioData()
+      setCredentialsInfo(updatedData.credentials)
+    }
+
+    window.addEventListener("storage", handleStorageChange)
+    return () => window.removeEventListener("storage", handleStorageChange)
+  }, [])
 
   return (
     <Card className="bg-zinc-900/70 border-zinc-800 backdrop-blur-sm">
@@ -88,9 +105,11 @@ export function CredentialsSection() {
                 <Award className="w-4 h-4 mr-2 text-cyan-400" />
                 Skills & Expertise
               </h4>
-              <div className="flex flex-wrap gap-2">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
                 {credentialsInfo.skills.map((skill, index) => (
-                  <SkillTag key={index}>{skill}</SkillTag>
+                  <div key={index} className="bg-zinc-800/30 p-2 sm:p-3 rounded-lg">
+                    <SkillTag>{skill}</SkillTag>
+                  </div>
                 ))}
               </div>
             </div>

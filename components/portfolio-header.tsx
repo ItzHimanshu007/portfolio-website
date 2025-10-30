@@ -4,15 +4,30 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Menu, X } from "lucide-react"
 import { cn } from "@/lib/utils"
-import { getNavItems, getPersonalInfo } from "@/lib/data"
+import { getPortfolioData, initializeStorage } from "@/lib/storage"
 
 export function PortfolioHeader() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [activeSection, setActiveSection] = useState("")
+  const [navItems, setNavItems] = useState(getPortfolioData().navigation)
+  const [personalInfo, setPersonalInfo] = useState(getPortfolioData().personal)
 
-  const navItems = getNavItems()
-  const personalInfo = getPersonalInfo()
+  useEffect(() => {
+    initializeStorage()
+    const data = getPortfolioData()
+    setNavItems(data.navigation)
+    setPersonalInfo(data.personal)
+
+    const handleStorageChange = () => {
+      const updatedData = getPortfolioData()
+      setNavItems(updatedData.navigation)
+      setPersonalInfo(updatedData.personal)
+    }
+
+    window.addEventListener("storage", handleStorageChange)
+    return () => window.removeEventListener("storage", handleStorageChange)
+  }, [])
 
   useEffect(() => {
     const handleScroll = () => {
